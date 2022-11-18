@@ -1,8 +1,7 @@
 
 import Vapor
 import Fluent
-import Model
-import Foundation
+import Models
 
 extension Team: Content {
 
@@ -10,7 +9,8 @@ extension Team: Content {
 
         static var schema: String = "teams"
 
-        @ID(cusotm: "id")
+        @IDProperty<Entity, UUID>(key: .id)
         var id: UUID?
     }
 }
+
