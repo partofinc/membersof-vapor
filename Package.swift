@@ -4,7 +4,13 @@ import PackageDescription
 let package = Package(
     name: "membersof",
     platforms: [
-       .macOS(.v12)
+        .macOS(.v12),
+        .iOS(.v15),
+        .watchOS(.v9),
+        .tvOS(.v15)
+    ],
+    products: [
+        .library(name: "Models", targets: ["Models"])
     ],
     dependencies: [
         // 💧 A server-side Swift web framework.
