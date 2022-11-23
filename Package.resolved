@@ -55,15 +55,6 @@
       }
     },
     {
-      "identity" : "membersof-model-swift",
-      "kind" : "remoteSourceControl",
-      "location" : "git@github.com:partofinc/membersof-model-swift.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "32a861a5b0b1be6637f945271d96fb8f36e58fca"
-      }
-    },
-    {
       "identity" : "multipart-kit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vapor/multipart-kit.git",
