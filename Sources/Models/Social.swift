@@ -10,6 +10,15 @@ public struct Social: Codable, Hashable, Identifiable {
     public let order: Int
     public let memberId: UUID?
     public let teamId: UUID?
+    
+    public init(id: UUID, media: Media, account: String, order: Int, memberId: UUID?, teamId: UUID?) {
+        self.id = id
+        self.media = media
+        self.account = account
+        self.order = order
+        self.memberId = memberId
+        self.teamId = teamId
+    }
 }
 
 public extension Social {
