@@ -10,17 +10,17 @@ public struct Membership: Codable, Hashable, Equatable, Identifiable {
     public let period: Period
     public let length: Int
     public let createDate: Date
-    public let teamId: UUID
+    public let team: Team
     public let pricing: [Price]
     
-    public init(id: UUID, name: String, visits: Int, period: Period, length: Int, createDate: Date, teamId: UUID, pricing: [Price]) {
+    public init(id: UUID, name: String, visits: Int, period: Period, length: Int, createDate: Date, team: Team, pricing: [Price]) {
         self.id = id
         self.name = name
         self.visits = visits
         self.period = period
         self.length = length
         self.createDate = createDate
-        self.teamId = teamId
+        self.team = team
         self.pricing = pricing
     }
 }
