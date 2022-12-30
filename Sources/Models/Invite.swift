@@ -12,10 +12,10 @@ public struct Invite: Codable, Identifiable, Hashable {
     public let id: UUID
     public let createDate: Date
     public let name: String?
-    public let role: Supervisor.Role?
-    public let teamId: UUID?
+    public let role: Supervisor.Role
+    public let teamId: UUID
     
-    public init(id: UUID, createDate: Date, name: String?, role: Supervisor.Role?, teamId: UUID?) {
+    public init(id: UUID, createDate: Date, name: String?, role: Supervisor.Role, teamId: UUID) {
         self.id = id
         self.createDate = createDate
         self.name = name
@@ -24,7 +24,7 @@ public struct Invite: Codable, Identifiable, Hashable {
     }
 }
 
-extension Invite {
+public extension Invite {
     var title: String {
         let name = self.name ?? "Noname"
         return name + "(Pending)"
