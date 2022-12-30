@@ -7,15 +7,15 @@ public struct Social: Codable, Hashable, Identifiable {
     public let id: UUID
     public let media: Media
     public let account: String
-    public let order: Int
+    public let createDate: Date
     public let memberId: UUID?
     public let teamId: UUID?
     
-    public init(id: UUID, media: Media, account: String, order: Int, memberId: UUID?, teamId: UUID?) {
+    public init(id: UUID, media: Media, account: String, createDate: Date, memberId: UUID?, teamId: UUID?) {
         self.id = id
         self.media = media
         self.account = account
-        self.order = order
+        self.createDate = createDate
         self.memberId = memberId
         self.teamId = teamId
     }

@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "membersof",
+    name: "MembersOf",
     platforms: [
         .macOS(.v12),
         .iOS(.v15),
